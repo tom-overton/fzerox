@@ -66,10 +66,13 @@ all: $(BUILD_DIR) $(TARGET).z64 verify
 clean:
 	rm -rf asm assets bin $(BUILD_DIR) undefined_syms_auto.txt undefined_funcs_auto.txt $(TARGET).ld $(TARGET).z64
 
+submodules:
+	git submodule update --init --recursive
+
 split:
 	rm -rf $(DATA_DIRS) $(ASM_DIRS) && ./tools/splat/split.py $(SPLAT_YAML)
 
-setup: clean split
+setup: clean submodules split
 
 $(BUILD_DIR):
 	echo $(C_FILES)
