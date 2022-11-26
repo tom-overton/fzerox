@@ -127,7 +127,7 @@ segments:
     - [0x5E1F0, asm]
     - [0x5E360, asm]
     - [0x5E3B0, asm]
-    - [0x5E570, asm]
+    - [0x5E570, c, os/O1/settime]
     - [0x5E5A0, asm]
     - [0x5E610, asm]
     - [0x5E710, asm]

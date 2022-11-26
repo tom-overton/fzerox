@@ -1,4 +1,3 @@
-osSetTime = 0x8006A8F0;
 osViExtendVStart = 0x80075230;
 osAfterPreNMI = 0x8007E08C;
 osSyncPrintf = 0x800B038C;
@@ -38,9 +37,11 @@ guPerspective = 0x800BE920;
 osGetTime = 0x800C2F00;
 guRotateF = 0x800C33A0;
 __osDisableInt = 0x800C3D40;
+osSetTime = 0x800C4570;
 __osPfsSelectBank = 0x800C4710;
 __osContAddressCrc = 0x800C6010;
 __osContDataCrc = 0x800C60E0;
 __osEPiRawWriteIo = 0x800C6180;
 osSetTimer = 0x800C6310;
 osStartThread = 0x800C76B0;
+__osCurrentTime = 0x800FB420;
