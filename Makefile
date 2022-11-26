@@ -12,7 +12,7 @@ ROM := $(TARGET).z64
 ELF := $(BUILD_DIR)/$(TARGET).elf
 LD_SCRIPT := $(TARGET).ld
 LD_MAP := $(BUILD_DIR)/$(TARGET).map
-ASM_DIRS := asm asm/os asm/gu asm/io asm/libc asm/mgu asm/rmon
+ASM_DIRS := asm asm/libultra/os asm/libultra/gu asm/libultra/io asm/libultra/libc asm/libultra/mgu asm/libultra/rmon
 DATA_DIRS := bin assets
 SRC_DIRS := $(shell find src -type d)
 
@@ -51,7 +51,7 @@ OPTFLAGS := -O2
 
 $(foreach dir,$(SRC_DIRS) $(ASM_DIRS) $(DATA_DIRS) ,$(shell mkdir -p build/$(dir)))
 
-build/src/os/O1/%.o: OPTFLAGS := -O1
+build/src/libultra/os/O1/%.o: OPTFLAGS := -O1
 
 
 ######################## Build #############################

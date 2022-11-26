@@ -1,6 +1,7 @@
 osViExtendVStart = 0x80075230;
 osAfterPreNMI = 0x8007E08C;
 osSyncPrintf = 0x800B038C;
+__osSpSetPc = 0x800BB39C;
 osSendMesg = 0x800BB9B0;
 osStopThread = 0x800BBB00;
 osRecvMesg = 0x800BBBC0;
