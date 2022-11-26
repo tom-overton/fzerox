@@ -119,7 +119,7 @@ segments:
     - [0x5D7F0, asm]
     - [0x5D800, asm]
     - [0x5D810, asm]
-    - [0x5DB80, asm]
+    - [0x5DB80, asm, gu/ortho]
     - [0x5DD40, asm]
     - [0x5DD80, asm]
     - [0x5DEC0, asm]
