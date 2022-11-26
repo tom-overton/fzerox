@@ -158,7 +158,7 @@ segments:
     - [0x5E1F0, asm, libultra/gu/cosf]
     - [0x5E360, asm, libultra/io/epiread]
     - [0x5E3B0, asm, libultra/io/visetspecial]
-    - [0x5E570, c, libultra/os/O1/settime]
+    - [0x5E570, c, libultra/os/settime]
     - [0x5E5A0, asm, libultra/io/visetevent]
     - [0x5E610, asm, libultra/io/cartrominit]
     - [0x5E710, asm, libultra/io/pfsselectbank]

@@ -51,7 +51,7 @@ OPTFLAGS := -O2
 
 $(foreach dir,$(SRC_DIRS) $(ASM_DIRS) $(DATA_DIRS) ,$(shell mkdir -p build/$(dir)))
 
-build/src/libultra/os/O1/%.o: OPTFLAGS := -O1
+build/src/libultra/os/%.o: OPTFLAGS := -O1
 
 
 ######################## Build #############################
