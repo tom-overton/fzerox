@@ -1,0 +1,1 @@
+osGetTime = 0x800C2F00;

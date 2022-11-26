@@ -197,3 +197,4 @@ __osSpSetPc = 0x800C78A0;
 __osSetHWIntrRoutine = 0x800C78E0;
 rspbootTextStart = 0x800C7930;
 __osCurrentTime = 0x800FB420;
+__osBaseCounter = 0x800FB428;

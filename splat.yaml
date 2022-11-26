@@ -138,7 +138,8 @@ segments:
     - [0x5CB30, asm, libultra/io/epirawdma]
     - [0x5CD60, asm, libultra/io/sptaskyielded]
     - [0x5CDE0, hasm, libultra/libc/bcmp]
-    - [0x5CF00, asm, libultra/os/gettime]
+    - [0x5CF00, c, libultra/os/gettime]
+    - [0x5CF90, bin, noppad_5CF90] # There's an extra nop align here, but cant reproduce it with just splat functionality alone. need a . += 0x10 in the linker script at this spot.
     - [0x5CFA0, asm, libultra/os/timerintr]
     - [0x5D3A0, asm, libultra/gu/rotate]
     - [0x5D590, asm, libultra/os/setglobalintmask]
