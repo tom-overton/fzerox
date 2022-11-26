@@ -12,7 +12,7 @@ ROM := $(TARGET).z64
 ELF := $(BUILD_DIR)/$(TARGET).elf
 LD_SCRIPT := $(TARGET).ld
 LD_MAP := $(BUILD_DIR)/$(TARGET).map
-ASM_DIRS := asm asm/os asm/gu asm/io
+ASM_DIRS := asm asm/os asm/gu asm/io asm/libc asm/mgu asm/rmon
 DATA_DIRS := bin assets
 SRC_DIRS := $(shell find src -type d)
 
