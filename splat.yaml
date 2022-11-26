@@ -1,0 +1,70 @@
+name: F-Zero X (North America)
+sha1: 5f658e88ffa9de23cba6986a8fd3d3a90d7b4340
+options:
+  basename: fzerox
+  target_path: baserom.z64
+  base_path: .
+  compiler: IDO
+  find_file_boundaries: True
+  header_encoding: ASCII
+  platform: n64
+  # undefined_funcs_auto: True
+  # undefined_funcs_auto_path: undefined_funcs_auto.txt
+  # undefined_syms_auto: True
+  # undefined_syms_auto_path: undefined_syms_auto.txt
+  # symbol_addrs_path: symbol_addrs.txt
+  # asm_path: asm
+  # src_path: src
+  # build_path: build
+  # extensions_path: tools/splat_ext
+  # mips_abi_float_regs: o32
+  # section_order: [".text", ".data", ".rodata", ".bss"]
+  # auto_all_sections: [".data", ".rodata", ".bss"]
+  # libultra_symbols: True
+  # hardware_regs: True
+segments:
+  - name: header
+    type: header
+    start: 0x0
+    vram: 0
+    subsegments:
+    - [0x0000, header, header]
+  - name: boot
+    type: code
+    start: 0x0040
+    vram: 0xA4000040
+    subsegments:
+    - [0x0040, asm, boot]
+    - [0x0B70, bin, rspboot_font]
+  - name: main
+    type: code
+    start: 0x1000
+    vram: 0x80067000
+    subsegments:
+    - [0x1000, hasm, entry]
+    - [0x1060, asm]
+    - [0x1AE0, asm]
+    - [0x2A60, asm]
+    - [0x2B20, asm]
+    - [0x73F0, asm]
+    - [0xEA90, asm]
+    - [0xF0B0, asm]
+    - [0xF1C0, asm]
+    - [0x10490, asm]
+    - [0x11CF0, asm]
+    - [0x14440, asm]
+    - [0x18410, asm]
+    - [0x194E0, asm]
+    - [0x197D0, asm]
+    - [0x19F40, asm]
+    - [0x36ED0, asm]
+    - [0x44620, asm]
+    - [0x446D0, asm]
+    - [0x459A0, asm]
+    - [0x4EBC0, asm]
+    - [0x4EC40, asm]
+    - [0x4FFB0, asm]
+    - [0x511D0, asm]
+  - type: bin
+    start: 0x55620
+  - [0x1000000]

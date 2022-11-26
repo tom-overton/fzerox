@@ -1,0 +1,10 @@
+.vscode/
+asm/
+assets/
+bin/
+build/
+*.o
+*.z64
+*.ld
+undefined_funcs_auto.txt
+undefined_syms_auto.txt
